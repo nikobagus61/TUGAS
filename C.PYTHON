@@ -1,0 +1,30 @@
+nama=[]
+nim=[]
+tugas=[]
+uts=[]
+uas=[]
+akhir=[]
+stop = False
+i = 1
+while (not stop) :
+    nama = raw_input("Nama {}:".format(i))
+    nim = raw_input("NIM :")
+    tugas = input("Nilai Tugas :")
+    uts = input("Nilai UTS :")
+    uas = input("Nilai UAS :")
+    i += 1
+    tanya =raw_input("Tambah data (y/t) ?")
+    while tanya != 'y' and tanya != 't':
+          tanya = raw_input("Tambah data (y/t) ?")
+    if tanya == 't':
+        stop = True
+        print "=" * 10
+        print"======================================================================"
+        print"|NO | NAMA | NIM | NILAI TUGAS | NILAI UTS | NILAI UAS | NILAI AKHIR |"
+        print"======================================================================"
+        for n in range(i):
+          print "|",i+1,"|" ,nama,"|",nim,"|",tugas,"|" ,uts,"|",uas,"|",akhir,"|"
+        break
+    
+
+
